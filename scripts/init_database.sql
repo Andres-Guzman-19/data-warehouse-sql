@@ -4,12 +4,12 @@ CREAR BASE DE DATOS
 
 PROPOSITO:
 	El sript crea una base de datos llamada DataWarehouse, en caso de que exista esta base la elimina y vuelve a crear
-	Ademas, se crean tres esuemas en la base de datos:
+	Ademas, se crean tres esquemas en la base de datos:
 		- bronze
 		- silver
 		- gold
 ADVERTENCIA:
-	Al ejecutar el script se elimina de forma permanente la base de datos y por lo tanto todos los datos ue la contengas
+	Al ejecutar el script se elimina de forma permanente la base de datos y por lo tanto todos los datos que contengan
 */
 
 USE master;
