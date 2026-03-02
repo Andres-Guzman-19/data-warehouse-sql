@@ -27,10 +27,10 @@ BEGIN
 		PRINT '--------------------------------------------';
 
 		SET @start_time = GETDATE();
-		PRINT '>> truncate en tabla bronze.crm_cust_info';
+		PRINT '>> truncate en tabla crm_cust_info';
 		TRUNCATE TABLE bronze.crm_cust_info;
 
-		PRINT '>> Insertando datos en: bronze.crm_cust_info';
+		PRINT '>> Insertando datos en: crm_cust_info';
 		BULK INSERT bronze.crm_cust_info
 		FROM 'C:\Users\Andres\Documents\Analisis de datos\SQL\data-warehouse-sql\datasets\source_crm\cust_info.csv'
 		WITH(
@@ -79,10 +79,10 @@ BEGIN
 		PRINT '--------------------------------------------';
 
 		SET @start_time = GETDATE();
-		PRINT '>> truncate en tabla bronze.erp_cust_az12';
+		PRINT '>> truncate en tabla erp_cust_az12';
 		TRUNCATE TABLE bronze.erp_cust_az12;
 
-		PRINT '>> Insertando datos en: bronze.erp_cust_az12';
+		PRINT '>> Insertando datos en: erp_cust_az12';
 		BULK INSERT bronze.erp_cust_az12
 		FROM 'C:\Users\Andres\Documents\Analisis de datos\SQL\data-warehouse-sql\datasets\source_erp\cust_az12.csv'
 		WITH(
@@ -95,10 +95,10 @@ BEGIN
 		PRINT '--------------------------------------------';
 
 		SET @start_time = GETDATE();
-		PRINT '>> truncate en tabla bronze.erp_loc_a101';
+		PRINT '>> truncate en tabla erp_loc_a101';
 		TRUNCATE TABLE bronze.erp_loc_a101;
 
-		PRINT '>> Insertando datos en: bronze.erp_loc_a101';
+		PRINT '>> Insertando datos en: erp_loc_a101';
 		BULK INSERT bronze.erp_loc_a101
 		FROM 'C:\Users\Andres\Documents\Analisis de datos\SQL\data-warehouse-sql\datasets\source_erp\loc_a101.csv'
 		WITH(
@@ -111,10 +111,10 @@ BEGIN
 		PRINT '--------------------------------------------';
 
 		SET @start_time = GETDATE();
-		PRINT '>> truncate en tabla bronze.erp_px_cat_g1v2';
+		PRINT '>> truncate en tabla erp_px_cat_g1v2';
 		TRUNCATE TABLE bronze.erp_px_cat_g1v2;
 
-		PRINT '>> Insertando datos en: bronze.erp_px_cat_g1v2';
+		PRINT '>> Insertando datos en: erp_px_cat_g1v2';
 		BULK INSERT bronze.erp_px_cat_g1v2
 		FROM 'C:\Users\Andres\Documents\Analisis de datos\SQL\data-warehouse-sql\datasets\source_erp\px_cat_g1v2.csv'
 		WITH(
